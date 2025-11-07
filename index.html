@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexa 26 Setup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="setup-screen" class="glass">
+    <h1>Welcome to Nexa 26</h1>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <button onclick="completeSetup()">Continue</button>
+  </div>
+
+  <div id="desktop" class="hidden">
+    <div id="dock" class="glass">
+      <button onclick="openApp('notes')">📝</button>
+      <button onclick="openApp('settings')">⚙️</button>
+    </div>
+    <div id="window-notes" class="window hidden glass">
+      <div class="title-bar">Notes <button onclick="closeApp('notes')">✖</button></div>
+      <textarea placeholder="Type your notes here..."></textarea>
+    </div>
+    <div id="window-settings" class="window hidden glass">
+      <div class="title-bar">Settings <button onclick="closeApp('settings')">✖</button></div>
+      <p>Theme: macOS Tahoe</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
