@@ -3,27 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexa 26 Setup</title>
+  <title>Nexa 26</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="setup-screen" class="glass">
-    <h1>Welcome to Nexa 26</h1>
-    <input type="text" id="username" placeholder="Enter your name" />
-    <button onclick="completeSetup()">Continue</button>
+  <div id="setup-screen" class="setup glass fade-in">
+    <h1 class="title">Welcome to Nexa 26</h1>
+    <p class="subtitle">Inspired by macOS Tahoe</p>
+    <input type="text" id="username" placeholder="Your name" />
+    <button onclick="completeSetup()">Start</button>
   </div>
 
   <div id="desktop" class="hidden">
-    <div id="dock" class="glass">
-      <button onclick="openApp('notes')">📝</button>
-      <button onclick="openApp('settings')">⚙️</button>
+    <div id="dock" class="dock glass">
+      <img src="assets/icons/notes.png" alt="Notes" onclick="openApp('notes')" />
+      <img src="assets/icons/settings.png" alt="Settings" onclick="openApp('settings')" />
     </div>
+
     <div id="window-notes" class="window hidden glass">
-      <div class="title-bar">Notes <button onclick="closeApp('notes')">✖</button></div>
+      <div class="title-bar">📝 Notes <button onclick="closeApp('notes')">✖</button></div>
       <textarea placeholder="Type your notes here..."></textarea>
     </div>
+
     <div id="window-settings" class="window hidden glass">
-      <div class="title-bar">Settings <button onclick="closeApp('settings')">✖</button></div>
+      <div class="title-bar">⚙️ Settings <button onclick="closeApp('settings')">✖</button></div>
       <p>Theme: macOS Tahoe</p>
     </div>
   </div>
