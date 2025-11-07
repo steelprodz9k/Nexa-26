@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  font-family: 'SF Pro Display', sans-serif;
-  background: linear-gradient(to bottom right, #1e1e2f, #3a3a5a);
+  font-family: 'Helvetica Neue', sans-serif;
+  background: url('assets/wallpapers/tahoe.jpg') no-repeat center center fixed;
+  background-size: cover;
   overflow: hidden;
   color: #fff;
 }
@@ -31,17 +32,6 @@ body {
   text-align: center;
   padding: 40px;
   width: 300px;
-}
-
-.setup .title {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.setup .subtitle {
-  font-size: 1em;
-  margin-bottom: 20px;
-  color: #ccc;
 }
 
 .setup input {
