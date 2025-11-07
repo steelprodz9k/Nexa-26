@@ -8,8 +8,8 @@
 </head>
 <body>
   <div id="setup-screen" class="setup glass fade-in">
-    <h1 class="title">Welcome to Nexa 26</h1>
-    <p class="subtitle">Inspired by macOS Tahoe</p>
+    <h1>Welcome to Nexa 26</h1>
+    <p>Inspired by macOS Tahoe</p>
     <input type="text" id="username" placeholder="Your name" />
     <button onclick="completeSetup()">Start</button>
   </div>
@@ -20,12 +20,12 @@
       <img src="assets/icons/settings.png" alt="Settings" onclick="openApp('settings')" />
     </div>
 
-    <div id="window-notes" class="window hidden glass">
+    <div id="window-notes" class="window hidden glass draggable">
       <div class="title-bar">📝 Notes <button onclick="closeApp('notes')">✖</button></div>
       <textarea placeholder="Type your notes here..."></textarea>
     </div>
 
-    <div id="window-settings" class="window hidden glass">
+    <div id="window-settings" class="window hidden glass draggable">
       <div class="title-bar">⚙️ Settings <button onclick="closeApp('settings')">✖</button></div>
       <p>Theme: macOS Tahoe</p>
     </div>
